@@ -108,6 +108,13 @@ bool Unit::isDead(){
 	else return false;
 }
 
+
+int Unit::ultimateAttack(Unit &opp){
+	return (opp.beAttacked(atk*2));
+}
+
+
+
 void drawScene(char p_action,int p,char m_action,int m){
 	cout << "                                                       \n";
 	if(p_action == 'A'){
